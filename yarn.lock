@@ -64,7 +64,7 @@
     "@vue/compiler-dom" "3.2.33"
     "@vue/shared" "3.2.33"
 
-"@vue/devtools-api@^6.0.0", "@vue/devtools-api@^6.0.0-beta.11":
+"@vue/devtools-api@^6.0.0":
   version "6.1.4"
   resolved "https://registry.npmmirror.com/@vue/devtools-api/-/devtools-api-6.1.4.tgz#b4aec2f4b4599e11ba774a50c67fa378c9824e53"
   integrity sha512-IiA0SvDrJEgXvVxjNkHPFfDx6SXw0b/TUkqMcDZWNg9fnCAHbTpoo59YfJ9QLFkwa3raau5vSlRVzMSLDnfdtQ==
@@ -730,6 +730,11 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
+recaptcha-v3@^1.8.0:
+  version "1.10.0"
+  resolved "https://registry.npmmirror.com/recaptcha-v3/-/recaptcha-v3-1.10.0.tgz#f966b5a0d8021fd2ed85ac4be832f6acb6ec1ed1"
+  integrity sha512-aGTxYSk3FFNKnXeKDbLpgRDRyIHRZNBF5HyaXXAN1Aj4TSyyZvmoAn9CylvpqLV3pYpIQavwc+2rzhNFn5SsLQ==
+
 rechoir@^0.6.2:
   version "0.6.2"
   resolved "https://registry.npmmirror.com/rechoir/-/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"
@@ -868,6 +873,13 @@ vue-cli-plugin-vuetify@~2.4.8:
     semver "^7.1.2"
     shelljs "^0.8.3"
 
+vue-recaptcha-v3@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmmirror.com/vue-recaptcha-v3/-/vue-recaptcha-v3-2.0.1.tgz#10b07bbe07881734b9997111cfe3c9a9ca786bdb"
+  integrity sha512-isEDtOfHU4wWRrZZuxciAELtQmPOeEEdicPNa0f1AOyLPy3sCcBEcpFt+FOcO3RQv5unJ3Yn5NlsWtXv9rXqjg==
+  dependencies:
+    recaptcha-v3 "^1.8.0"
+
 vue-router@4:
   version "4.0.14"
   resolved "https://registry.npmmirror.com/vue-router/-/vue-router-4.0.14.tgz#ce2028c1c5c33e30c7287950c973f397fce1bd65"
@@ -904,13 +916,6 @@ vuetify@^3.0.0-beta.0:
   version "3.0.0-beta.1"
   resolved "https://registry.npmmirror.com/vuetify/-/vuetify-3.0.0-beta.1.tgz#8e3e4e41e00f1f6e00cb0a22b6a8f528581ca3f1"
   integrity sha512-698CB/Xlvxku2Tm4AsFrmQ7LzMXOjleX7A5tbyQTnhPyt0NI1OTkf5zJUoXL3TNi2TN7DglN+adI6AE69e6CeQ==
-
-vuex@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.npmmirror.com/vuex/-/vuex-4.0.2.tgz#f896dbd5bf2a0e963f00c67e9b610de749ccacc9"
-  integrity sha512-M6r8uxELjZIK8kTKDGgZTYX/ahzblnzC4isU1tpmEuOIIKmV+TRdc+H4s8ds2NuZ7wpUTdGRzJRtoj+lI+pc0Q==
-  dependencies:
-    "@vue/devtools-api" "^6.0.0-beta.11"
 
 webfontloader@^1.0.0:
   version "1.6.28"

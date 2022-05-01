@@ -1,13 +1,25 @@
 import { createApp } from "vue";
 import vuetify from "./plugins/vuetify";
-import { createStore } from "vuex";
 import { loadFonts } from "./plugins/webfontloader";
+import Constants from "./utils/Constants";
+import { VueReCaptcha } from "vue-recaptcha-v3";
 
-import App from './App.vue'
-import router from './router/router'
+import App from "./App.vue";
+import router from "./router/router";
 
 loadFonts();
 
-const store = createStore()
+const app = createApp(App);
 
-createApp(App).use(vuetify).use(store).use(router).mount("#app");
+app.config.globalProperties.$constants = Constants;
+
+app
+  .use(vuetify)
+  .use(router)
+  .use(VueReCaptcha, {
+    siteKey: Constants.reCaptchaSiteKey,
+    loaderOptions: {
+      useRecaptchaNet: true,
+    },
+  })
+  .mount("#app");
