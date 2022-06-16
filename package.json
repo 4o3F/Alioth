@@ -8,6 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@sentry/tracing": "^7.1.1",
+    "@sentry/vue": "^7.1.1",
     "axios": "^0.27.2",
     "daisyui": "^2.15.3",
     "vue": "^3.2.25",
