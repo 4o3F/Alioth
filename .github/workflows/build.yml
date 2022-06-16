@@ -14,4 +14,4 @@ jobs:
         with:
           username: 'CatMoe'
           reponame: 'Alioth'
-          token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+          token: ${{ secrets.GITHUB_TOKEN }}
