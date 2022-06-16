@@ -42,9 +42,9 @@
       </thead>
       <tbody v-for="challenge in challenges">
 
-      <tr class="hover" v-on:click="router.push('/challenges/' + challenge.challengeID)">
-        <td>{{ challenge.challengeTitle }}</td>
-        <td>{{ challenge.challengeID }}</td>
+      <tr class="hover" v-on:click="router.push('/challenges/' + challenge.challenge_id)">
+        <td>{{ challenge.challenge_title }}</td>
+        <td>{{ challenge.challenge_id }}</td>
         <td>{{ challenge.score }}</td>
       </tr>
       </tbody>

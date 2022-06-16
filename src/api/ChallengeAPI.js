@@ -19,7 +19,7 @@ class ChallengeAPI {
                 if (response.data.code!=200) {
                     callback(undefined)
                 }
-                var data = response.data.data.challengeParticipants.sort((a,b) => {
+                var data = response.data.data.challenge_participants.sort((a,b) => {
                     return a.data - b.data
                 })
                 callback(data)
@@ -54,7 +54,7 @@ class ChallengeAPI {
         }
         axios.post(apiConfig.API_BASE_URL+'/challenges/'+id+'/join',
             {
-                "challengeID": id,
+                "challenge_id": id,
                 "data": data,
                 "bv":bv,
                 "uid":uid

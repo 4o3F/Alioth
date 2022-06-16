@@ -52,8 +52,8 @@ const route = useRoute()
 const challengeTitle = ref('')
 const challengeContent = ref('')
 var fetchDetailCallback = function (data) {
-  challengeTitle.value = data.challengeTitle
-  challengeContent.value = data.challengeContent
+  challengeTitle.value = data.challenge_title
+  challengeContent.value = data.challenge_content
 }
 ChallengeAPI.fetchDetail(route.params.id, fetchDetailCallback)
 
