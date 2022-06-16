@@ -67,6 +67,26 @@ class ChallengeAPI {
                 }
             })
     }
+
+    createChallenge(challengeTitle, challengeContent, callback) {
+        // 返回(challengeID, message)
+        if (challengeTitle,challengeContent==undefined) {
+            callback(undefined, "")
+            return
+        }
+        axios.post(apiConfig.API_BASE_URL + '/challenges/create',
+            {
+                "challenge_title": challengeTitle,
+                "challenge_content": challengeContent
+            })
+            .then(response => {
+                if (response.data.code!=200){
+                    callback(undefined, response.data.msg)
+                    return
+                }
+                callback(response.data.challenge_id, "成功创建挑战!将在2s后跳转到挑战详情界面")
+            })
+    }
 }
 
 let challengeAPI;

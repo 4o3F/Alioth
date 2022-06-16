@@ -2,6 +2,7 @@ import Main from "../pages/Main.vue";
 import ChallengeDetails from "../pages/Challenges/ChallengeDetail.vue";
 import ChallengeMain from "../pages/Challenges/ChallengeMain.vue";
 import ChallengeJoin from "../pages/Challenges/ChallengeJoin.vue";
+import ChallengeCreate from "../pages/Challenges/ChallengeCreate.vue";
 
 const routes= [
     {
@@ -26,6 +27,12 @@ const routes= [
         path: "/challenges/:id/join",
         component: ChallengeJoin,
         name: "参与挑战",
+        sidebar: false
+    },
+    {
+        path: "/challenges/create",
+        component: ChallengeCreate,
+        name: "创建挑战",
         sidebar: false
     }
 ]
